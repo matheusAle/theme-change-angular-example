@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ThemeChanger} from '../themes/theme-change';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'theme-change-angular-example';
+
+  constructor(public theme: ThemeChanger) {}
 }
